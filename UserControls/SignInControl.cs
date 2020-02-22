@@ -12,16 +12,10 @@ namespace Exam_R
 {
     public partial class SignInControl : UserControl
     {
-        public bool SignIn { get; private set; } = default;
-        public event EventHandler UserControlChanged;
+        public event EventHandler<EventArgs> SignInClick = delegate { };
         public SignInControl()
         {
             InitializeComponent();
-        }
-
-        public void UserControlChange(EventArgs e)
-        {
-            UserControlChanged.Invoke(this, e);
         }
 
         protected void materialLabel3_Click(object sender, EventArgs e)
@@ -30,17 +24,12 @@ namespace Exam_R
             try
             {
                 User user = appDB.Users.FirstOrDefault(u => u.Email == emailbox.Text);
-                SignIn = true;
+                SignInClick.Invoke(sender, e);
             }
             catch (Exception)
             {
                 MessageBox.Show("Not Found");
             }
-        }
-
-        private void SignInControl_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

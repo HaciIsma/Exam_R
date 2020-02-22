@@ -20,16 +20,40 @@ namespace Exam_R
         public Form1()
         {
             InitializeComponent();
+            signUp.SignUpClick += SignUp_SignUpClick;
+            signIn.SignInClick += SignIn_SignInClick;
+        }
+
+
+        private void FooClear()
+        {
+            SignInLabel.Hide();
+            SignUpLabel.Hide();
+            signIn.Hide();
+            signUp.Hide();
+        }
+
+        private void FooCreat()
+        {
+            
         }
 
         #region Metods
+
 
         #endregion
 
         #region Events
 
+        private void SignIn_SignInClick(object sender, EventArgs e)
+        {
+            FooClear();
+        }
 
-        #endregion
+        private void SignUp_SignUpClick(object sender, EventArgs e)
+        {
+            FooClear();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -49,7 +73,6 @@ namespace Exam_R
             signUp.Visible = true;
         }
 
-
         private void label1_Click(object sender, EventArgs e)
         {
             signUp.Hide();
@@ -58,6 +81,7 @@ namespace Exam_R
             signIn.Visible = true;
         }
 
-        protected void signUpControl1_Load(object sender, EventArgs e){}
+        #endregion
+
     }
 }

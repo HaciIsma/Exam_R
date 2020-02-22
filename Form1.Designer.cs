@@ -30,9 +30,9 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.SignInLabel = new System.Windows.Forms.Label();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.SignUpLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -41,9 +41,9 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.SignInLabel);
             this.flowLayoutPanel1.Controls.Add(this.bunifuCustomLabel2);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.SignUpLabel);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-4, -1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(191, 540);
@@ -59,16 +59,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // SignInLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 238);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 48);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Sign In";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.SignInLabel.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInLabel.Location = new System.Drawing.Point(3, 238);
+            this.SignInLabel.Name = "SignInLabel";
+            this.SignInLabel.Size = new System.Drawing.Size(188, 48);
+            this.SignInLabel.TabIndex = 6;
+            this.SignInLabel.Text = "Sign In";
+            this.SignInLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SignInLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // bunifuCustomLabel2
             // 
@@ -77,16 +77,16 @@
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(185, 10);
             this.bunifuCustomLabel2.TabIndex = 5;
             // 
-            // label2
+            // SignUpLabel
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 296);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 48);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Sign Up";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.SignUpLabel.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpLabel.Location = new System.Drawing.Point(3, 296);
+            this.SignUpLabel.Name = "SignUpLabel";
+            this.SignUpLabel.Size = new System.Drawing.Size(188, 48);
+            this.SignUpLabel.TabIndex = 7;
+            this.SignUpLabel.Text = "Sign Up";
+            this.SignUpLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SignUpLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
@@ -108,8 +108,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label SignInLabel;
+        private System.Windows.Forms.Label SignUpLabel;
     }
 }
 

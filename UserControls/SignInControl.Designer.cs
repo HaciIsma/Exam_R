@@ -127,9 +127,9 @@
             this.materialLabel3.Location = new System.Drawing.Point(92, 120);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(56, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(50, 19);
             this.materialLabel3.TabIndex = 13;
-            this.materialLabel3.Text = "Sign Up";
+            this.materialLabel3.Text = "Sign In";
             this.materialLabel3.Click += new System.EventHandler(this.materialLabel3_Click);
             // 
             // SignInControl
@@ -143,7 +143,6 @@
             this.Controls.Add(this.emailbox);
             this.Name = "SignInControl";
             this.Size = new System.Drawing.Size(243, 157);
-            this.Load += new System.EventHandler(this.SignInControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

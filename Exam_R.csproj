@@ -284,10 +284,10 @@
     <Compile Include="Meals.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Reservation.cs" />
-    <Compile Include="SignInControl.cs">
+    <Compile Include="UserControls\SignInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SignInControl.Designer.cs">
+    <Compile Include="UserControls\SignInControl.Designer.cs">
       <DependentUpon>SignInControl.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
@@ -318,7 +318,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SignInControl.resx">
+    <EmbeddedResource Include="UserControls\SignInControl.resx">
       <DependentUpon>SignInControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignUpControl.resx">

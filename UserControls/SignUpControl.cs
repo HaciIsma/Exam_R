@@ -6,13 +6,11 @@ namespace Exam_R.UserControls
 {
     public partial class SignUpControl : UserControl
     {
-        public bool SignUp { get; private set; } = default;
+        public event EventHandler<EventArgs> SignUpClick = delegate { };
         public SignUpControl()
         {
             InitializeComponent();
         }
-
-
 
         #region Metods
 
@@ -44,7 +42,7 @@ namespace Exam_R.UserControls
                 if (passwordbox.Text != default && confirmPasswordBox.Text == passwordbox.Text)
                 { 
                     appDB.SaveChanges();
-                    SignUp = true;
+                    SignUpClick.Invoke(sender,e);
                 }
                 else
                     MessageBox.Show("Invalid password");
