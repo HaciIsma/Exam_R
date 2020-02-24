@@ -144,3 +144,7 @@ C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\MetroFramework.dll
 C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.UserControls.SignUpControl.resources
 C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.SignInControl.resources
+C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\ImageListView.dll
+C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\ImageListView.xml
+C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.UserControls.FoodsControl.resources
+C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.MenuControl.resources

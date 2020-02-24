@@ -128,6 +128,9 @@
       <HintPath>..\packages\GCDesign.1.0.0\lib\net46\GCDesign.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ImageListView, Version=13.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageListView.13.7.2\lib\net35\ImageListView.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.2.2.1.2\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
@@ -282,8 +285,20 @@
     <Compile Include="Data\AppDBContext.cs" />
     <Compile Include="Meal.cs" />
     <Compile Include="Meals.cs" />
+    <Compile Include="MenuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuControl.Designer.cs">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs" />
     <Compile Include="Reservation.cs" />
+    <Compile Include="UserControls\FoodsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FoodsControl.Designer.cs">
+      <DependentUpon>FoodsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\SignInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -308,6 +323,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -318,6 +336,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\FoodsControl.resx">
+      <DependentUpon>FoodsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignInControl.resx">
       <DependentUpon>SignInControl.cs</DependentUpon>
     </EmbeddedResource>

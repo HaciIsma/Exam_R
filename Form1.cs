@@ -17,13 +17,49 @@ namespace Exam_R
         SignUpControl signUp = new SignUpControl();
         SignInControl signIn = new SignInControl();
 
+        MenuControl menu = new MenuControl();
+        FoodsControl foods = new FoodsControl();
+
+
         public Form1()
         {
             InitializeComponent();
+
+            #region Subscribe
             signUp.SignUpClick += SignUp_SignUpClick;
             signIn.SignInClick += SignIn_SignInClick;
+            menu.FoodsEvent += Menu_FoodsEvent;
+            menu.ReserveEvent += Menu_ReserveEvent;
+            menu.UserInfoEvent += Menu_UserInfoEvent;
+            menu.AppInfoEvent += Menu_AppInfoEvent;
+            #endregion
         }
 
+        #region Subscribing
+
+        private void Menu_AppInfoEvent(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Menu_UserInfoEvent(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Menu_ReserveEvent(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Menu_FoodsEvent(object sender, EventArgs e)
+        {
+            this.Controls.Add(foods);
+            foods.Location = new Point(193, 25);
+            foods.Visible = true;
+        }
+
+        #endregion
 
         private void FooClear()
         {
@@ -35,7 +71,7 @@ namespace Exam_R
 
         private void FooCreat()
         {
-            
+            this.flowLayoutPanel1.Controls.Add(menu);
         }
 
         #region Metods
@@ -48,11 +84,13 @@ namespace Exam_R
         private void SignIn_SignInClick(object sender, EventArgs e)
         {
             FooClear();
+            FooCreat();
         }
 
         private void SignUp_SignUpClick(object sender, EventArgs e)
         {
             FooClear();
+            FooCreat();
         }
 
         private void Form1_Load(object sender, EventArgs e)
