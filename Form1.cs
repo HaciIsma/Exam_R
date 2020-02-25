@@ -1,14 +1,7 @@
 ﻿using Exam_R.UserControls;
 using MetroFramework.Forms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System;
 
 namespace Exam_R
 {
@@ -19,7 +12,7 @@ namespace Exam_R
 
         MenuControl menu = new MenuControl();
         FoodsControl foods = new FoodsControl();
-        //ReserveControl reserve = new ReserveControl();
+        ReserveControl reserve = new ReserveControl();
 
 
         public Form1()
@@ -41,15 +34,15 @@ namespace Exam_R
 
         private void Menu_ReserveEvent(object sender, EventArgs e)
         {
-            //foods.Hide();
-            //this.Controls.Add(reserve);
-            //reserve.Location = new Point(193, 25);
-            //reserve.Visible = true;
+            foods.Hide();
+            this.Controls.Add(reserve);
+            reserve.Location = new Point(193, 20);
+            reserve.Visible = true;
         }
 
         private void Menu_FoodsEvent(object sender, EventArgs e)
         {
-            //reserve.Hide();
+            reserve.Hide();
             this.Controls.Add(foods);
             foods.Location = new Point(193, 25);
             foods.Visible = true;

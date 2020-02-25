@@ -29,35 +29,36 @@
         private void InitializeComponent()
         {
             this.panel6 = new System.Windows.Forms.Panel();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.Button = new MetroFramework.Controls.MetroButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.cb = new System.Windows.Forms.CheckBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.metroButton5);
+            this.panel6.Controls.Add(this.Button);
             this.panel6.Controls.Add(this.pictureBox6);
             this.panel6.Controls.Add(this.materialLabel11);
             this.panel6.Controls.Add(this.materialLabel12);
-            this.panel6.Controls.Add(this.checkBox6);
+            this.panel6.Controls.Add(this.cb);
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(317, 75);
             this.panel6.TabIndex = 5;
             // 
-            // metroButton5
+            // Button
             // 
-            this.metroButton5.Location = new System.Drawing.Point(238, 11);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(76, 57);
-            this.metroButton5.TabIndex = 5;
-            this.metroButton5.Text = "Reserve";
-            this.metroButton5.UseSelectable = true;
+            this.Button.Location = new System.Drawing.Point(238, 11);
+            this.Button.Name = "Button";
+            this.Button.Size = new System.Drawing.Size(76, 57);
+            this.Button.TabIndex = 5;
+            this.Button.Text = "Reserve";
+            this.Button.UseSelectable = true;
+            this.Button.Click += new System.EventHandler(this.metroButton5_Click);
             // 
             // pictureBox6
             // 
@@ -93,14 +94,14 @@
             this.materialLabel12.TabIndex = 0;
             this.materialLabel12.Text = "Table num:";
             // 
-            // checkBox6
+            // cb
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(238, 54);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cb.AutoSize = true;
+            this.cb.Location = new System.Drawing.Point(238, 54);
+            this.cb.Name = "cb";
+            this.cb.Size = new System.Drawing.Size(15, 14);
+            this.cb.TabIndex = 5;
+            this.cb.UseVisualStyleBackColor = true;
             // 
             // Reserve
             // 
@@ -109,7 +110,6 @@
             this.Controls.Add(this.panel6);
             this.Name = "Reserve";
             this.Size = new System.Drawing.Size(322, 82);
-            this.Load += new System.EventHandler(this.Reserve_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -120,10 +120,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel6;
-        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroButton Button;
         private System.Windows.Forms.PictureBox pictureBox6;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox cb;
     }
 }

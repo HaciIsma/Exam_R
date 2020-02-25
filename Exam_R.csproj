@@ -285,10 +285,10 @@
     <Compile Include="Data\AppDBContext.cs" />
     <Compile Include="Meal.cs" />
     <Compile Include="Meals.cs" />
-    <Compile Include="MenuControl.cs">
+    <Compile Include="UserControls\MenuControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MenuControl.Designer.cs">
+    <Compile Include="UserControls\MenuControl.Designer.cs">
       <DependentUpon>MenuControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Order.cs" />
@@ -335,7 +335,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuControl.resx">
+    <EmbeddedResource Include="UserControls\MenuControl.resx">
       <DependentUpon>MenuControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

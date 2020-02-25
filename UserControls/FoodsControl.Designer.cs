@@ -40,6 +40,7 @@
             this.pics.Size = new System.Drawing.Size(545, 505);
             this.pics.TabIndex = 0;
             this.pics.UseWIC = true;
+            this.pics.ItemClick += new Manina.Windows.Forms.ItemClickEventHandler(this.pics_ItemClick);
             // 
             // FoodsControl
             // 

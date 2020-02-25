@@ -16,12 +16,5 @@ namespace Exam_R.UserControls
         {
             InitializeComponent();
         }
-
-        
-
-        private void ReserveControl_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

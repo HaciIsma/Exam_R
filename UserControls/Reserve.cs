@@ -12,18 +12,26 @@ namespace Exam_R.UserControls
 {
     public partial class Reserve : UserControl
     {
-        public Control Parrent { get; private set; }
-        public Reserve()
+        public Reserve(int num)
         {
             InitializeComponent();
-            panel6.Controls.Add(checkBox6);
-            panel6.Controls.Add(metroButton5);
-            materialLabel12.Text += $"{panel6.TabIndex}";
+            int tableCount = new Random().Next(1, 8);
+            materialLabel12.Text += $"{num}";
+            materialLabel11.Text += tableCount % 2 == 0 ? tableCount.ToString() : (++tableCount).ToString();
         }
 
-        private void Reserve_Load(object sender, EventArgs e)
+        private void metroButton5_Click(object sender, EventArgs e)
         {
-            Parent = panel6;
+            if (cb.Checked)
+            {
+                cb.Checked = default;
+                Button.Text = "Reserve";
+            }
+            else
+            { 
+                cb.Checked = true;
+                Button.Text = "Reserved";
+            }
         }
     }
 }
