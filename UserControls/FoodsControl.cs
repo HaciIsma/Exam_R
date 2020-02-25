@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Exam_R.Class;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,8 +9,9 @@ using System.Windows.Forms;
 
 namespace Exam_R.UserControls
 {
-    public partial class FoodsControl : UserControl
+    public partial class FoodsControl : System.Windows.Forms.UserControl
     {
+        string mealName = default;
         List<Meal> meals1 = new List<Meal>();
         public FoodsControl()
         {
@@ -39,7 +41,8 @@ namespace Exam_R.UserControls
                 using (var ms = new MemoryStream(await client.GetByteArrayAsync(new Uri(str))))
                 {
                     Image img = Image.FromStream(ms);
-                    pics.Items.Add("", img);
+                    pics.Items.Add($"{str}", img);
+                    mealName = str;
                 }
                 i++;
             }
@@ -47,7 +50,9 @@ namespace Exam_R.UserControls
 
         private void pics_ItemClick(object sender, Manina.Windows.Forms.ItemClickEventArgs e)
         {
-
+            OrderDBContect orderDB = new OrderDBContect();
+            orderDB.Orders.Add(new Order { Email = Used.Email, MealName = mealName });
+            orderDB.SaveChanges();
         }
     }
 }

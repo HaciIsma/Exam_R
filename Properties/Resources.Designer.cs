@@ -83,6 +83,16 @@ namespace Exam_R.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap name_80px {
+            get {
+                object obj = ResourceManager.GetObject("name_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shrimp_vector_png_2 {
             get {
                 object obj = ResourceManager.GetObject("shrimp-vector-png-2", resourceCulture);

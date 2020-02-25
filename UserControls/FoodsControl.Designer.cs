@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pics);
             this.Name = "FoodsControl";
-            this.Size = new System.Drawing.Size(647, 521);
+            this.Size = new System.Drawing.Size(554, 516);
             this.ResumeLayout(false);
 
         }

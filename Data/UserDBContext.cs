@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Exam_R
 {
-    public class AppDBContect : DbContext
+    public class UserDBContect : DbContext
     {
         public DbSet<User> Users { get; set; }
 

@@ -2,6 +2,7 @@
 using MetroFramework.Forms;
 using System.Drawing;
 using System;
+using Exam_R.Class;
 
 namespace Exam_R
 {
@@ -13,7 +14,7 @@ namespace Exam_R
         MenuControl menu = new MenuControl();
         FoodsControl foods = new FoodsControl();
         ReserveControl reserve = new ReserveControl();
-
+        UserInfoControl userInfo = new UserInfoControl();
 
         public Form1()
         {
@@ -29,12 +30,17 @@ namespace Exam_R
 
         private void Menu_UserInfoEvent(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            foods.Hide();
+            reserve.Hide();
+            this.Controls.Add(userInfo);
+            userInfo.Location = new Point(193, 25);
+            userInfo.Visible = true;
         }
 
         private void Menu_ReserveEvent(object sender, EventArgs e)
         {
             foods.Hide();
+            userInfo.Hide();
             this.Controls.Add(reserve);
             reserve.Location = new Point(193, 20);
             reserve.Visible = true;
@@ -43,6 +49,7 @@ namespace Exam_R
         private void Menu_FoodsEvent(object sender, EventArgs e)
         {
             reserve.Hide();
+            userInfo.Hide();
             this.Controls.Add(foods);
             foods.Location = new Point(193, 25);
             foods.Visible = true;
@@ -85,7 +92,15 @@ namespace Exam_R
         private void Form1_Load(object sender, EventArgs e)
         {
             #region DBCreate
-            using (var db = new AppDBContect())
+            using (var db = new UserDBContect())
+            {
+                db.Database.EnsureCreated();
+            }
+            using (var db = new OrderDBContect())
+            {
+                db.Database.EnsureCreated();
+            }
+            using (var db = new ReservationDBContect())
             {
                 db.Database.EnsureCreated();
             }

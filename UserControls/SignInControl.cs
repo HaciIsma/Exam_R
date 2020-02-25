@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exam_R.Class;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -14,15 +15,17 @@ namespace Exam_R
 
         protected void materialLabel3_Click(object sender, EventArgs e)
         {
-            AppDBContect appDB = new AppDBContect();
+            UserDBContect appDB = new UserDBContect();
             try
             {
                 User user = appDB.Users.FirstOrDefault(u => u.Email == emailbox.Text);
                 SignInClick.Invoke(sender, e);
+                Used.Email = emailbox.Text;
             }
             catch (Exception)
             {
                 MessageBox.Show("Not Found");
+                return;
             }
         }
     }

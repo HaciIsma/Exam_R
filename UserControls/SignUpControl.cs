@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Exam_R.UserControls
 {
-    public partial class SignUpControl : UserControl
+    public partial class SignUpControl : System.Windows.Forms.UserControl
     {
         public event EventHandler<EventArgs> SignUpClick = delegate { };
         public SignUpControl()
@@ -28,7 +28,7 @@ namespace Exam_R.UserControls
 
         private void materialLabel1_Click(object sender, EventArgs e)
         {
-            AppDBContect appDB = new AppDBContect();
+            UserDBContect appDB = new UserDBContect();
             try
             {
                 User user = appDB.Users.FirstOrDefault
