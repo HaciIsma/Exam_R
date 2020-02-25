@@ -46,7 +46,7 @@
             this.flowLayoutPanel1.Controls.Add(this.SignUpLabel);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-4, -1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(191, 540);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 540);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -54,7 +54,7 @@
             this.pictureBox1.Image = global::Exam_R.Properties.Resources.shrimp_vector_png_2;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(185, 232);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

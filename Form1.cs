@@ -19,20 +19,12 @@ namespace Exam_R
 
         MenuControl menu = new MenuControl();
         FoodsControl foods = new FoodsControl();
+        //ReserveControl reserve = new ReserveControl();
 
 
         public Form1()
         {
             InitializeComponent();
-
-            #region Subscribe
-            signUp.SignUpClick += SignUp_SignUpClick;
-            signIn.SignInClick += SignIn_SignInClick;
-            menu.FoodsEvent += Menu_FoodsEvent;
-            menu.ReserveEvent += Menu_ReserveEvent;
-            menu.UserInfoEvent += Menu_UserInfoEvent;
-            menu.AppInfoEvent += Menu_AppInfoEvent;
-            #endregion
         }
 
         #region Subscribing
@@ -49,11 +41,15 @@ namespace Exam_R
 
         private void Menu_ReserveEvent(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //foods.Hide();
+            //this.Controls.Add(reserve);
+            //reserve.Location = new Point(193, 25);
+            //reserve.Visible = true;
         }
 
         private void Menu_FoodsEvent(object sender, EventArgs e)
         {
+            //reserve.Hide();
             this.Controls.Add(foods);
             foods.Location = new Point(193, 25);
             foods.Visible = true;
@@ -100,6 +96,14 @@ namespace Exam_R
             {
                 db.Database.EnsureCreated();
             }
+            #endregion
+            #region Subscribe
+            signUp.SignUpClick += SignUp_SignUpClick;
+            signIn.SignInClick += SignIn_SignInClick;
+            menu.FoodsEvent += Menu_FoodsEvent;
+            menu.ReserveEvent += Menu_ReserveEvent;
+            menu.UserInfoEvent += Menu_UserInfoEvent;
+            menu.AppInfoEvent += Menu_AppInfoEvent;
             #endregion
         }
 

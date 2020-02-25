@@ -148,3 +148,5 @@ C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\ImageListView.dll
 C:\Users\Haci\source\repos\Exam_R\Exam_R\bin\Debug\ImageListView.xml
 C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.UserControls.FoodsControl.resources
 C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.MenuControl.resources
+C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.UserControls.ReserveControl.resources
+C:\Users\Haci\source\repos\Exam_R\Exam_R\obj\Debug\Exam_R.UserControls.Reserve.resources

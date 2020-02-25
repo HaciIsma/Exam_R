@@ -299,6 +299,18 @@
     <Compile Include="UserControls\FoodsControl.Designer.cs">
       <DependentUpon>FoodsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Reserve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Reserve.Designer.cs">
+      <DependentUpon>Reserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReserveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReserveControl.Designer.cs">
+      <DependentUpon>ReserveControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\SignInControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -339,6 +351,12 @@
     <EmbeddedResource Include="UserControls\FoodsControl.resx">
       <DependentUpon>FoodsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Reserve.resx">
+      <DependentUpon>Reserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ReserveControl.resx">
+      <DependentUpon>ReserveControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignInControl.resx">
       <DependentUpon>SignInControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +382,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
