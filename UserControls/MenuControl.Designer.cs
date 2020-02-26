@@ -108,6 +108,7 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "User Info";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

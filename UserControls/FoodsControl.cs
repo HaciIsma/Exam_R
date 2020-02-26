@@ -41,7 +41,7 @@ namespace Exam_R.UserControls
                 using (var ms = new MemoryStream(await client.GetByteArrayAsync(new Uri(str))))
                 {
                     Image img = Image.FromStream(ms);
-                    pics.Items.Add($"{str}", img);
+                    pics.Items.Add($"{meals[0].strMeal}", img);
                     mealName = str;
                 }
                 i++;

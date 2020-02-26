@@ -26,5 +26,10 @@ namespace Exam_R
         {
             ReserveEvent.Invoke(sender, e);
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            UserInfoEvent.Invoke(sender, e);
+        }
     }
 }

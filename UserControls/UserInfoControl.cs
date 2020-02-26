@@ -16,10 +16,23 @@ namespace Exam_R.UserControls
         private void UserInfoControl_Load(object sender, EventArgs e)
         {
             emailbox.Text = Used.Email;
-            Reservation reservation = ReservationDB.Reservations.FirstOrDefault(u => u.Email == Used.Email && u.Date.Day == DateTime.Now.Day);
-            var meal = OrderDB.Orders.FirstOrDefault(m => m.Email == Used.Email);
-            tnumbox.Text = reservation.TableId.ToString();
-            mnbox.Text = meal.MealName.ToString();
+            try
+            {
+                Reservation reservation = ReservationDB.Reservations.FirstOrDefault(u => u.Email == Used.Email && u.Date.Day == DateTime.Now.Day);
+                tnumbox.Text = reservation.TableId.ToString();
+            }
+            catch (Exception)
+            {
+            }
+            try
+            {
+                var meal = OrderDB.Orders.FirstOrDefault(m => m.Email == Used.Email);
+                mnbox.Text = meal.MealName.ToString();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
